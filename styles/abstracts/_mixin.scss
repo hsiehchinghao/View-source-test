@@ -1,0 +1,58 @@
+// 定義斷點（以 max-width 為基準註解）
+$breakpoint-xsmall: 500px; // 768
+$breakpoint-small: 768px; // 768
+$breakpoint-medium: 1024px; // 1024
+$breakpoint-large: 1200px; // 1200
+$breakpoint-xlarge: 1440px; // 1440
+
+// RWD mixin
+// 若直接傳入數值(如 1600px)使用 min-width 媒體查詢
+@mixin rwd($breakpoint) {
+  @if ($breakpoint == xs) {
+    @media (max-width: $breakpoint-xsmall) {
+      @content;
+    }
+  } @else if $breakpoint == s {
+    @media (max-width: $breakpoint-small) {
+      @content;
+    }
+  } @else if $breakpoint == m {
+    @media (max-width: $breakpoint-medium) {
+      @content;
+    }
+  } @else if $breakpoint == l {
+    @media (max-width: $breakpoint-large) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xlarge) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+// flexbox mixin
+@mixin flexbox($direction, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+//extend
+%btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 99px;
+  border: 1px dashed #000;
+  transition: 0.3s;
+  &:hover {
+    background-color: #ffffff00;
+    color: #000;
+  }
+}

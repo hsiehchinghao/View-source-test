@@ -1,0 +1,61 @@
+@use "./abstracts/mixin";
+@use "./abstracts/variables";
+
+@font-face {
+  font-family: "fake receipt";
+  font-style: normal;
+  font-weight: normal;
+  src: local("fake receipt"), url("/fonts/fake\ receipt.woff") format("woff");
+}
+@font-face {
+  font-family: "Arial W02 Rounded Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/903436/f4f51a1b-cfa4-4a10-94e5-bbba26e15311.woff2")
+      format("woff2"),
+    url("/fonts/903436/e21820f0-ed6c-4236-895c-9d164babebc0.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "PPNeueMontreal-Medium";
+  font-style: normal;
+  font-weight: medium;
+  src: url("/fonts/PPNeueMontreal-Medium.woff") format("woff"),
+    url("/fonts/PPNeueMontreal-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PPNeueMontreal-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/PPNeueMontreal-Regular.woff") format("woff"),
+    url("/fonts/PPNeueMontreal-Regular.woff2") format("woff2");
+}
+
+html,
+body {
+  background-color: #daffbd;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PPNeueMontreal-Regular", "Arial", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+main {
+  width: 100svw;
+}

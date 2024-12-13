@@ -1,0 +1,7 @@
+@use "/styles/abstracts/mixin" as *;
+.headerSection {
+  @include flexbox(column, space-around, center);
+  width: 100svw;
+  height: 100svh;
+  min-height: 500px;
+}

@@ -1,0 +1,49 @@
+@use "/styles/abstracts/mixin" as *;
+
+.navBar {
+  @include flexbox(row, space-around, center);
+  background-color: #daffbd;
+  font-family: "fake receipt", sans-serif;
+  width: 100svw;
+  border: 1px dashed #000;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  height: 53px;
+  margin: 0;
+  overflow-x: scroll;
+  > a {
+    margin: 0 10px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 0;
+      border: none;
+      border-bottom: 1.2px dashed #000;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    > li {
+      list-style: none;
+      cursor: pointer;
+      text-wrap: nowrap;
+      font-size: 14px;
+    }
+  }
+}
+
+@include rwd(xs) {
+  .navBar {
+    @include flexbox(row, start, center);
+  }
+}

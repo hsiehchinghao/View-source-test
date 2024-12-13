@@ -1,0 +1,95 @@
+@use "/styles/abstracts/mixin" as *;
+
+.hero {
+  @include flexbox(row, space-around, center);
+  width: 100svw;
+  height: 100svh;
+  min-height: 500px;
+  font-family: "Arial W02 Rounded Bold", sans-serif;
+  font-size: 36px;
+  letter-spacing: -0.15rem;
+  border-bottom: 1px dashed #000;
+  @include rwd(m) {
+    font-size: 30px;
+  }
+}
+.info {
+  @include flexbox(column, start, center);
+  line-height: 43px;
+  transform-origin: center center;
+  animation: float 4s infinite;
+  animation-delay: 2s;
+  > span {
+    text-wrap: nowrap;
+  }
+}
+.logoSection {
+  @include flexbox(column, center, center);
+  width: 50%;
+  aspect-ratio: 8/5.5;
+  .brandWrapper {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 8/1;
+    img {
+      object-fit: contain;
+    }
+  }
+  .logoWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2/1;
+    margin-bottom: 6px;
+    animation: bounce 4s ease infinite 1.2s forwards;
+    // animation-delay: 3s;
+  }
+  .logoSubtitleWrapper {
+    @extend .brandWrapper;
+    aspect-ratio: 20/1;
+  }
+}
+
+//768以下
+@include rwd(s) {
+  .hero {
+    @include flexbox(column, space-around, center);
+    font-size: 26px;
+    .info {
+      line-height: 24px;
+    }
+    .logoSection {
+      width: 80%;
+
+      .logoSubtitleWrapper {
+        aspect-ratio: 20/1;
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  10% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1.05, 0.9);
+  }
+  30% {
+    transform: scale(0.9, 1.05);
+  }
+  40% {
+    transform: scale(1, 1);
+  }
+}
