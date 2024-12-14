@@ -39,12 +39,19 @@ const ThisMon = () => {
             className={`${styles.flipCard} ${isFlipped ? styles.flip : ""}`}
           >
             {/* 正面 */}
-            <div className={styles.paperWrapperFront} onClick={handleFlip}>
-              <Image src="/images/paper.svg" alt="paper" fill />
+            <div
+              className={styles.paperWrapperFront}
+              style={{ position: "absolute" }}
+              onClick={handleFlip}
+            >
+              <Image src="/images/paper.svg" alt="paper" priority fill />
             </div>
             {/* 背面 */}
-            <div className={styles.paperWrapperBack}>
-              <Image src="/images/paper-back.svg" alt="paper" fill />
+            <div
+              className={styles.paperWrapperBack}
+              style={{ position: "absolute" }}
+            >
+              <Image src="/images/paper-back.svg" alt="paper" priority fill />
             </div>
           </div>
         </div>

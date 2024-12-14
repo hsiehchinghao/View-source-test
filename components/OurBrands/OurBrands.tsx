@@ -16,6 +16,7 @@ interface BrandList {
 }
 
 const OurBrands = () => {
+  //mock data fetching
   //   const {
   //     data: brandList,
   //     isLoading, //未處理
@@ -23,7 +24,8 @@ const OurBrands = () => {
   //   } = useQuery({
   //     queryKey: ["brands"],
   //     queryFn: async () => {
-  //       return brands;
+  //       const res = await fetch("....");
+  //       return await res.json().brandsData;
   //     },
   //   });
 

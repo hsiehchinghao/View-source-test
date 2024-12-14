@@ -25,22 +25,27 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
       >
-        <div className={styles.brandWrapper}>
+        <div className={styles.brandWrapper} style={{ position: "relative" }}>
           <Image
             src="/images/the-locavore-logo.svg"
             alt="brand"
             style={{ objectFit: "contain" }}
+            priority
             fill
           />
         </div>
-        <div className={styles.logoWrapper}>
-          <Image src="/images/locavore-logo.svg" alt="Hero" fill />
+        <div className={styles.logoWrapper} style={{ position: "relative" }}>
+          <Image src="/images/locavore-logo.svg" alt="Hero" priority fill />
         </div>
-        <div className={styles.logoSubtitleWrapper}>
+        <div
+          className={styles.logoSubtitleWrapper}
+          style={{ position: "relative" }}
+        >
           <Image
             src="/images/logo-subtitle.svg"
             alt="logo-subtitle"
             style={{ objectFit: "contain" }}
+            priority
             fill
           />
         </div>

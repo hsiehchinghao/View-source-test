@@ -6,16 +6,22 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   const [uploadFile, setUploadFile] = useState<string>("");
-  const uploadInputRef = useRef<HTMLInputElement>(null);
+  const uploadInputRef = useRef<HTMLInputElement | null>(null);
   const handleUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log("file:", e.target.files);
     setUploadFile(e.target.files![0].name);
   };
   return (
     <section className={styles.footerSection}>
-      <motion.div className={styles.inviteSection}>
-        <div className={styles.storeWrapper}>
-          <Image src="/images/Vector.svg" alt="store" fill />
+      <motion.div
+        className={styles.inviteSection}
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1 }}
+      >
+        <div className={styles.storeWrapper} style={{ position: "relative" }}>
+          <Image src="/images/Vector.svg" alt="store" priority fill />
         </div>
         <h3>Want to be on our shelves?</h3>
         <p>
@@ -24,7 +30,13 @@ const Footer = () => {
           our directory, reach out with bios, images, etc. below.{" "}
         </p>
       </motion.div>
-      <motion.div className={styles.formSection}>
+      <motion.div
+        className={styles.formSection}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1 }}
+      >
         <form id="submitForm">
           <input type="text" placeholder="First and Last Name*" />
           <input type="mail" placeholder="Email*" />
@@ -44,6 +56,7 @@ const Footer = () => {
               alt="upload"
               width={20}
               height={20}
+              priority
             />
             <span>{uploadFile || "Upload a file "}</span>
           </div>
