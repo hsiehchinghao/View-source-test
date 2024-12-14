@@ -1,0 +1,275 @@
+{
+  "brandsData": [
+    {
+      "prefix": "A",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "B",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "C",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "D",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "E",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "F",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "G",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "H",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "I",
+      "brands": ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]
+    },
+    {
+      "prefix": "J",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "K",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "L",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "M",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "N",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "O",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "P",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "Q",
+      "brands": ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]
+    },
+    {
+      "prefix": "R",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "S",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "T",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "U",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "V",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "W",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "X",
+      "brands": ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]
+    },
+    {
+      "prefix": "Y",
+      "brands": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ]
+    },
+    {
+      "prefix": "Z",
+      "brands": ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]
+    }
+  ]
+}

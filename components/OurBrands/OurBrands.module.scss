@@ -1,0 +1,93 @@
+@use "/styles/abstracts/mixin" as *;
+
+.ourBrandsSection {
+  @include flexbox(row, space-between, start);
+  width: 100svw;
+  padding: 50px 30px;
+  border-bottom: 1px dashed #000;
+
+  h3 {
+    width: 20%;
+    font-family: "Arial W02 Rounded Bold", sans-serif;
+    font-size: 70px;
+    letter-spacing: -0.15rem;
+    margin-right: 100px;
+  }
+}
+
+.brandList {
+  flex: 1;
+  @include flexbox(row, start, start);
+  gap: 30px;
+}
+
+.column {
+  flex: 1;
+  @include flexbox(column, start, start);
+}
+
+.brandCategory {
+  @include flexbox(column, start, start);
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #000;
+  margin-bottom: 30px;
+
+  > h4 {
+    font-family: "PPNeueMontreal-Medium", sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  > ul {
+    padding-left: 0;
+    width: 100%;
+
+    > li {
+      font-family: "PPNeueMontreal-Regular", sans-serif;
+      font-size: 20px;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+@include rwd(m) {
+  .ourBrandsSection {
+    h3 {
+      font-size: 55px;
+    }
+  }
+}
+
+@include rwd(s) {
+  .ourBrandsSection {
+    @include flexbox(column, start, center);
+    padding: 80px 20px;
+    border-bottom: 0;
+
+    h3 {
+      width: 100%;
+      font-size: 55px;
+      margin-right: 0;
+      margin-bottom: 80px;
+    }
+  }
+  .brandList {
+    @include flexbox(column, start, start);
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .column {
+    width: 100%;
+
+    .brandCategory {
+      overflow-x: scroll;
+      > ul {
+        @include flexbox(column, start, start);
+        flex-wrap: wrap;
+        height: 100px;
+        column-gap: 20px;
+      }
+    }
+  }
+}

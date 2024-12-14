@@ -10,9 +10,9 @@
 .thisMonTitle {
   font-family: "Arial W02 Rounded Bold", sans-serif;
   width: 45%;
-  font-size: 65px;
+  font-size: 60px;
   letter-spacing: -0.15rem;
-  line-height: 70px;
+  line-height: 65px;
   > button {
     @extend %btn;
     font-size: 15px;
@@ -24,41 +24,68 @@
   @include flexbox(row, center, center);
   width: 45%;
   position: relative;
-  .paperWrapper {
-    position: relative;
-    width: 80%;
-    aspect-ratio: 13/18;
-    &:hover {
+}
+
+.flipCardContainer {
+  position: relative;
+  width: 80%;
+  aspect-ratio: 13/18;
+  perspective: 1000px;
+  cursor: pointer;
+  .flipCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    &.flip {
+      transform: rotateY(180deg);
     }
-    &::after {
-      content: "";
+    .paperWrapperFront {
       position: absolute;
-      top: 45%;
-      left: 2%;
-      width: 15%;
-      aspect-ratio: 1/2;
-      background: url("/images/goose.svg") no-repeat center/contain;
-      z-index: 2;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+    .paperWrapperBack {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
     }
   }
-  .alertText {
-    position: absolute;
-    font-family: "fake receipt", sans-serif;
-    left: 2%;
-    top: 52%;
-    animation: twinkle 1.5s infinite;
-    > p {
-      line-height: 18px;
-      font-size: 14px;
-      font-weight: 400;
-    }
+}
+
+.gooseIcon {
+  position: absolute;
+  top: 42%;
+  left: 10.5%;
+  width: 14%;
+  aspect-ratio: 1/2;
+  background: url("/images/goose.svg") no-repeat center/contain;
+  z-index: 2;
+  /* 關鍵修改：讓 goose 不受 3D 轉換影響 */
+  transform: translateZ(1px);
+  transform-style: flat;
+}
+.alertText {
+  position: absolute;
+  font-family: "fake receipt", sans-serif;
+  left: 0;
+  top: 52%;
+  animation: twinkle 1.5s infinite;
+  > p {
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 
 @include rwd(m) {
   .thisMonTitle {
-    font-size: 55px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 55px;
   }
 }
 
@@ -69,14 +96,21 @@
   }
   .thisMonTitle {
     font-family: "Arial W02 Rounded Bold", sans-serif;
+    text-align: center;
     width: 80%;
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 45px;
   }
 
   .thisMonPaper {
     width: 80%;
     margin-bottom: 40px;
+  }
+  .alertText {
+    top: 64%;
+    > p {
+      font-size: 12px;
+    }
   }
 }
 

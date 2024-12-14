@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.62.7",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.14.1",
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sass": "^1.83.0"
+    "sass": "^1.83.0",
+    "uuid": "^11.0.3",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

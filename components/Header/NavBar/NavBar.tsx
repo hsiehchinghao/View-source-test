@@ -7,14 +7,14 @@ const Navigation = () => {
       <a href="#About">
         <li>ABOUT</li>
       </a>
-      <a href="#">
+      <a href="#ourBrands">
         <li>OUR BRANDS</li>
       </a>
       <a href="#thisMon">
         {" "}
         <li>THIS MONTH</li>
       </a>
-      <a href="#">
+      <a href="#submitForm">
         {" "}
         <li>SUBMIT PRODUCTS</li>
       </a>
