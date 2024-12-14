@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Clone & install
+
+```bash
+git clone https://github.com/hsiehchinghao/View-source-test.git
+cd View-source-test
+npm install
+```
+
+
 ## Getting Started
 
 First, run the development server:
